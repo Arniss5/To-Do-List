@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -17,4 +18,69 @@ form {
     justify-content: center;
     align-items: center;
     min-height: 20vh;
+}
+
+form input {
+    width: 40vh;
+    height: 7vh;
+    border: none;
+    font-size: 2rem;
+    padding: 0 10px;
+}
+
+button {
+    width: 7vh;
+    height: 7vh;
+    color: purple;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    font-size: 2.5rem;
+}
+
+button:hover {
+    background-color: purple;
+    color: white;
+}
+
+.todo-list {
+    color: black;
+    width: 70vh;
+}
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 0 10px;
+    font-size: 1.8rem;
+    list-style: none;
+    background-color: white;
+    margin: 20px 0;
+    border-radius: 10px;
+    
+}
+
+.new-task li {
+    flex: 1;
+}
+
+.tick {
+    font-size: 2rem;
+    color: green;
+    width: 6vh;
+    height: 6vh;
+}
+
+.bin {
+    font-size: 2rem;
+    color: red;
+    width: 6vh;
+    height: 6vh;
 }
