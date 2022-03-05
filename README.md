@@ -16,4 +16,3 @@ HTML, CSS, JavaScript (vanilla)
   - Fontawesome icon
   - adding/deleting divs with JS eventListener
   - Saving to/deleting from local storage
- 
