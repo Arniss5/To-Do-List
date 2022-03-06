@@ -4,31 +4,47 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
+    <!-- font awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
     <link rel="stylesheet" href="./styles.css" />
-    <title>To do:</title>
+    <title>Document</title>
   </head>
   <body>
     <header>
-      <h1>Stuff to do:</h1>
+      <h1>To do:</h1>
     </header>
+
     <form>
-      <input type="text" class="inputbar" />
-      <button class="todo-button" type="submit">
-        <i class="fa-solid fa-circle-plus"></i>
+      <!-- add tasks -->
+      <input type="text" class="input" />
+      <button class="input-btn">
+        <i class="fa-solid fa-square-plus"></i>
       </button>
+
+      <!-- filter -->
+      <div class="filter-container">
+        <select name="filter" id="filter" class="filter">
+          <option value="all">All</option>
+          <option value="complete">Complete</option>
+          <option value="incomplete">Incomplete</option>
+          <i class="fa-solid fa-angles-down"></i>
+        </select>
+      </div>
     </form>
-    <div class="todo-container">
-      <ul class="todo-list"></ul>
+
+    <!-- list of tasks -->
+    <div class="list-container">
+      <ul class="list"></ul>
     </div>
 
     <script src="./app.js"></script>
