@@ -11,13 +11,16 @@ body {
     min-height: 100vh;
 }
 
+header {
+    font-size: 2.5rem;
+}
+
 header,
 form {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 20vh;
-    font-size: 2.5rem;
 }
 
 input,
@@ -27,6 +30,7 @@ button {
     border: none;
     background-color: white;
     outline: none;
+    padding-left: 10px;
 }
 
 .input-btn {
@@ -72,6 +76,11 @@ button {
     cursor: pointer;
 }
 
+.fa-check,
+.fa-trash {
+    pointer-events: none;
+}
+
 .tick-btn {
     color: white;
     background-color: rgb(46, 122, 46);
@@ -100,8 +109,43 @@ button {
 }
 
 .they-see-me-falling {
-    transform: translateY(8rem) rotateZ(20deg);
+    transform: translateY(8rem) rotateZ(-20deg);
     opacity: 0;
 }
 
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+}
 
+.filter-container{
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+select {
+    color: #ff9e75;
+    width: 10rem;
+    cursor: pointer;
+    padding: 0.7rem;
+    background: white;
+}
+
+.filter-container::after {
+    content: "\25BC";
+    position: absolute;
+    background: #ff9e75;
+    top: 0;
+    right: 0;
+    padding: 0.5rem;
+    pointer-events: none;
+}
+
+.filter-container:hover::after {
+    background: white;
+    color: #ff9e75;
+}
